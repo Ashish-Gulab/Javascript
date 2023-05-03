@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of getElementById</title>
+</head>
+<body>
+    <h1>Working Of Javascript</h1>
+    <p id="hello">Javascript can change the content of the HTML file</p>
+
+    <button type="button" onclick='document.getElementById("hello").innerText="The Content is changed"'>Click Here</button>
+
+    <h2>Javascript can change the HTML attribute values</h2>
+    <p>In this case, Javascript changes the value of the src attribute of an image</p>
+
+    <button type="button" onclick="document.getElementById('off').src='bulbImage2.jpg'">Bulb On</button>
+    <img id="off" src="bulbImage1.jpg" style="width:100px"> 
+    <!-- <img id="on" src="bulbImage2.jpg" alt="OnBulb" width="100px">  -->
+
+    <button type="button" onclick="document.getElementById('off').src='bulbImage1.jpg'">Bulb Off</button>
+
+
+    <h2>Javascript can change the style of an HTML Element</h2>
+
+    <p id="font">Change in Font size</p>
+    <!-- <button type="button" onclick="document.getElementById('font').style='font-size:50px'">Click here</button> -->
+    <button type="button" onclick="document.getElementById('font').style.fontSize='50px'">Click here</button>
+
+
+    <h2 id="demo">Javascript can hide the html elements</h2>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click here</button>
+
+
+    <h2 id="demo1" style="display:none">Javascript can show hidden HTML Elements</h2>
+    <button type="button" onclick="document.getElementById('demo1').style.display='block'">Click Here</button>
+
+</body>
+</html>
